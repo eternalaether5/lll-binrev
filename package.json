@@ -1,0 +1,1 @@
+{"name":"lll-binrev","private":true,"type":"module","scripts":{"build":"node build.mjs"}}
