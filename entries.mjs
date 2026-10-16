@@ -1,4 +1,4 @@
-// Curated v1. Every URL checked live (HTTP 200) on 2026-10-14.
+// Curated v1. URLs checked live (HTTP 200); last batch 2026-10-16.
 // Metadata + short original summaries only; content stays with providers.
 const LINK = "Free to access. Copyright held by the provider; this directory only links to it and reproduces no content.";
 const e = (id, title, provider, url, tags, level, format, license, source, summary) =>
@@ -29,4 +29,7 @@ e("detect-it-easy","Detect It Easy","horsicq","https://github.com/horsicq/Detect
 e("frida-docs","Frida documentation","Frida project","https://frida.re/docs/home/",["tools","dynamic-analysis","instrumentation"],"Intermediate","Official docs",LINK,"Official docs","Docs for Frida, a dynamic instrumentation toolkit for hooking functions on many platforms."),
 e("rizin","Rizin","Rizin org","https://rizin.re/",["tools","disassembler","fork"],"Intermediate","Open-source tool",LINK,"Official site","Community fork of radare2 with its own release cycle, GUI (Cutter) and docs."),
 e("ida-free","IDA Free","Hex-Rays","https://hex-rays.com/ida-free/",["tools","disassembler","freeware"],"Intermediate","Freeware download",LINK,"Official product page","Free edition of IDA for learning disassembly workflows; commercial features are paid separately."),
+e("cutter","Cutter","rizin org","https://cutter.re/",["tools","gui","disassembler","rizin"],"Beginner","Open-source GUI",LINK,"Official site","Free graphical front-end for rizin aimed at reverse engineers who prefer a GUI workflow."),
+e("x64dbg","x64dbg","x64dbg project","https://x64dbg.com/",["tools","debugger","windows","x86"],"Beginner","Open-source debugger",LINK,"Official site","Open-source Windows user-mode debugger widely used for malware analysis and crackmes."),
+e("flare-floss","FLOSS (FLARE Obfuscated String Solver)","Mandiant","https://github.com/mandiant/flare-floss",["tools","malware","strings","static-analysis"],"Intermediate","Open-source tool (GitHub)",LINK,"Official GitHub","Automatically extracts obfuscated stack and heap strings from malware binaries."),
 ];
