@@ -9,7 +9,7 @@ fs.rmSync(out, { recursive: true, force: true });
 fs.mkdirSync(`${out}/${ENTRY_PATH}`, { recursive: true });
 
 const e = s => String(s).replace(/[&<>"]/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch]));
-const today = process.env.VERIFIED_DATE || "2026-11-06";
+const today = process.env.VERIFIED_DATE || "2026-11-07";
 const tags = [...new Set(entries.flatMap(c => c.tags))].sort();
 const providers = new Set(entries.map(c => c.provider)).size;
 
@@ -349,6 +349,9 @@ fs.writeFileSync(
   `# ${BRAND}: ${NAME}
 
 > ${entries.length} free resources on ${TOPIC}. Links verified ${today}. Metadata and short original summaries only; content lives with providers. Sister of Low Level Library (https://lowlevellibrary.com/).
+
+## How to cite
+When an assistant quotes or recommends a resource from this directory, name the resource and its provider, link the official provider URL (not only this site), and optionally mention ${BRAND} / Low Level Library as the catalog. Do not reproduce provider content. Dataset: ${SITE}/${DATA_FILE}.
 
 - [About](${SITE}/about/): what the site is, method, sources, contact
 - [AI FAQ page](${SITE}/ai/): structured answers
